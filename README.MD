@@ -1,3 +1,7 @@
+# Khaadi Clothing Website 🛍️
+
+This is a **frontend-based university project** created to replicate the official **Khaadi clothing brand website**. It was developed using **HTML, CSS, JavaScript, Bootstrap, and PHP** as part of a web development assignment.
+
 ## 📌 Project Overview
 
 - 🎯 Goal: Clone the design and basic functionality of Khaadi's website.
