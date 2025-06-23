@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
+    overflow-y: auto;
+    /* prevent vertical scrollbar */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+/* Note: 'scrollbar-width' is not supported in Safari */
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Show scrollbar when scrolling */
+html:hover {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+}
+
+
+/* Set max-width for the content */
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    /* Center the content */
+}
+
+.top-bar {
+    background-color: #E8E1DB;
+
+    padding: 0.55rem 20px;
+    text-align: center;
+    position: relative;
+}
+
+.top-bar p {
+    margin: 0;
+    font-size: 0.80rem;
+
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 1px solid #DCDBDB;
+    /* Black thin line at the top */
+
+
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 11%;
+    left: 28px;
+    transform: translateY(-50%);
+    max-width: 75px;
+    height: auto;
+
+
+}
+
+.navbar-icons {
+    position: absolute;
+    top: 11%;
+    right: 1px;
+    transform: translateY(-50%);
+    padding: 8px 8px;
+
+
+
+
+}
+
+.navbar-icons img {
+    margin-left: 10px;
+    height: auto;
+    padding: 2px 2px;
+
+}
+
+.navbar a {
+    margin-right: 28px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+.search-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.search-bar {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 2px;
+    z-index: 999;
+    /* Ensure the search bar is on top */
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 300px;
+    /* Set a maximum width for the search bar */
+    overflow: hidden;
+    /* Hide any overflowing content */
+}
+
+.search-bar.active {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+
+    text-align: center;
+    color: #333;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-item {
+    position: relative;
+    /* Add this line to make the position of the button relative to the product box */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    height: 550px;
+    /* Adjust the height as needed */
+}
+
+
+.product-item:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.product-item .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.product-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    margin: 0;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-item button {
+    padding: 10px 20px;
+    background-color: #2a2a2b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    /* Add margin to separate button from other elements */
+    width: 100%;
+    /* Make the button full-width within its container */
+}
+
+.product-item button:hover {
+    background-color: #FF7900;
+    color: #FFFFFF;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFFFFF
+        /* Default color */
+}
+
+/* Change color of wishlist icon on hover */
+.wishlist-icon:hover {
+    color: #f2650e;
+    /* Change to your desired color */
+}
+
+.info-separator {
+    height: 20px;
+    /* Two lines of white spacing */
+    background-color: #fff;
+}
+
+.info-blocks {
+    color: #000;
+    /* Black text color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Allow blocks to wrap to the next line if needed */
+}
+
+.info-block {
+    max-width: 300px;
+    display: flex;
+    ont-family: Arial, sans-serif;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 10px;
+    margin-bottom: 0px;
+    padding-right: 60px;
+    padding-left: 50px;
+    /* Three little fingers of padding in the left corner */
+
+}
+
+.info-block img {
+    margin-right: 20px;
+    /* Adjust margin as needed */
+
+}
+
+.contact-section {
+    background-color: #fff;
+    /* White background */
+    color: #000;
+    /* Black text color */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border-top: 1px solid #DCDBDB;
+    /* Black thin line at the top */
+    border-bottom: 1px solid #DCDBDB;
+    /* Black thin line at the bottom */
+
+    /* Flexbox to align blocks */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 60px;
+    padding-left: 50px;
+    /* Three little fingers of padding in the left corner */
+}
+
+.contact-block {
+    max-width: 200px;
+    /* Adjust max-width as needed */
+    font-family: Arial, sans-serif;
+    /* Change font to Helvetica Neue */
+    font-size: 9px;
+    /* Decrease font size */
+    padding-left: 100px;
+    /* Three little fingers of padding in the left corner */
+    margin-bottom: 0;
+    padding-right: 150px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+
+}
+
+.contact-block img {
+    max-width: 19px;
+    /* Set your preferred max-width for the contact icons */
+    max-height: 30px;
+    /* Set your preferred max-height for the contact icons */
+    margin-right: 20px;
+    /* Adjust margin as needed to create space between the icon and text */
+}
+
+.contact-block h2 {
+    margin: 0;
+}
+
+.Info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Allow blocks to wrap to the next line if needed */
+    padding: 30px 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.Info-block {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    /* Adjust padding as needed */
+    padding-right: 50px;
+}
+
+.Info-block h2 {
+    font-weight: bold;
+}
+
+.Info-block p {
+    margin: 5px;
+    font-size: 12px;
+    /* Adjust font size as needed */
+}
+
+.Contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Contact-info img {
+    max-width: 20px;
+    /* Set your preferred max-width for the contact icons */
+    max-height: 20px;
+    /* Set your preferred max-height for the contact icons */
+    margin-right: 5px;
+    /* Adjust margin as needed to create space between the icon and text */
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.email-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 20px;
+    /* Equal height as button */
+}
+
+.email-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #FEEDE2;
+    color: #000000;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.email-input button:hover {
+    background-color: #F8643C;
+    color: #fcf9f9;
+}
+
+
+/* Add this to your existing styles */
+.INfo-section {
+    border-top: 1px solid #DCDBDB;
+    /* Black thin line at the top */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Allow blocks to wrap to the next line if needed */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.INfo-block {
+    max-width: 300px;
+    padding-right: 20px;
+    /* Add right padding to balance the layout */
+    margin-bottom: 20px;
+    /* Add spacing between blocks */
+    font-family: Arial, sans-serif;
+}
+
+.scroll-dots {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin: 3px 0;
+    background-color: #f9a270;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s, width 0.2s, height 0.2s;
+    cursor: pointer;
+}
+
+/* Highlight the active dot */
+.dot.active {
+    height: 10px;
+    width: 10px;
+    background-color: #f2650e;
+    /* You can choose your desired color */
+}
