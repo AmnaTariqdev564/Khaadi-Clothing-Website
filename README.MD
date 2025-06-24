@@ -12,6 +12,8 @@ This is a **frontend-based university project** created to replicate the officia
   - JavaScript
   - Bootstrap
   - PHP (for basic structure and page routing only)
+## Screenshots
+![images](https://github.com/AmnaTariqdev564/Khaadi-Clothing-Website/blob/24daad6a2da66abab5edeb84c78b1c15daa9feb0/image.jpg)
 
 ## 📸 Video-Demo
 
