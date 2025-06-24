@@ -16,6 +16,7 @@ This is a **frontend-based university project** created to replicate the officia
 ![images](https://github.com/AmnaTariqdev564/Khaadi-Clothing-Website/blob/24daad6a2da66abab5edeb84c78b1c15daa9feb0/image.jpg)
 
 ## 📸 Video-Demo
+![Demo](https://github.com/AmnaTariqdev564/Khaadi-Clothing-Website/blob/06b9c902f79c3d88d47eaebf68f9bf69071d484a/Demo-Video.mp4)
 
 ## 📁 Folder Structure
 
