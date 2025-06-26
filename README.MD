@@ -18,7 +18,7 @@ This is a **frontend-based university project** created to replicate the officia
 ##  Video-Demo
 ![Demo](https://github.com/AmnaTariqdev564/Khaadi-Clothing-Website/blob/06b9c902f79c3d88d47eaebf68f9bf69071d484a/Demo-Video.mp4)
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 index.html
@@ -48,4 +48,4 @@ This is a static clone project and does **not** include dynamic functionalities 
 
 ---
 
-> 🔒 **Disclaimer**: This project is for educational purposes only and is not affiliated with Khaadi.
+>  **Disclaimer**: This project is for educational purposes only and is not affiliated with Khaadi.
